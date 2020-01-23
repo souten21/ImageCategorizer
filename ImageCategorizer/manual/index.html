@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="jp">
+<head>
+	<meta charset="utf-8" />
+	<title>ImageCategorizerについて</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700|Raleway:900" rel="stylesheet">
+ 	<style>
+*{margin: 0; padding: 0;}
+html{font-size: 62.5%;}
+body{
+	line-height: 1; font-size: 15px; font-size: 1.5em;
+	font-family: 'Segoe UI','Arial','Noto Sans JP','Hiragino Kaku Gothic Pro','Meiryo',sans-serif;
+	background-color: #F9FCFC;color: #666;
+}
+
+header{
+	padding: 50px 10px; text-align: center; background-color: #89A;
+	color: #FFF; border-bottom: 4px solid #679;
+}
+header h1{
+	margin-bottom: 20px; font-size: 50px; font-size: 5rem;
+	font-weight: 900; font-family: 'Raleway','Arial',sans-serif;
+}
+header h2{font-size: 20px; font-size: 2rem; font-weight: 400;}
+
+section{padding: 30px;}
+section:nth-of-type(2n){background-color: #F0F3F4;}
+section h2{
+	margin: 50px 0 10px; padding: 10px 15px 8px; font-size: 28px;
+	font-size: 2.8rem; font-weight: 700;
+	background-color: #89A; color: #FFF;
+	border-radius: 10px; border-bottom: 4px solid #679;
+}
+section h2:first-child{margin-top: 0;}
+section h3{
+	margin: 30px 10px 5px; padding: 8px 10px; border: 2px solid #679;
+	font-size: 20px; font-size: 2rem; font-weight: 700;
+	color: #679; border-radius: 5px;
+}
+section p{margin: 15px; line-height: 1.5; text-align: justify;}
+section ul, section ol{margin: 15px 0; margin-left: 2em;}
+section li{margin: 5px; line-height: 1.5; text-align: justify;}
+section img{
+	display: block; margin: 15px auto; max-width: 100%; height: auto;
+	filter: drop-shadow(0 5px 5px rgba(0,0,0,0.5));
+}
+section table{border-collapse: collapse; width: 800px; max-width: 100%; margin: 0 auto;}
+section tr{border-bottom: 1px solid #CCC;}
+section th, section td{padding: 10px;}
+section th{}
+section td{}
+
+footer{}
+footer p{}
+
+.sec{width: 1000px; max-width: 100%; margin: 0 auto;}
+.code{font-family: 'Consolas','Meiryo',monospace;}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Image Categorizer</h1>
+		<h2>画像分類アプリケーション</h2>
+	</header>
+	<section>
+		<div class="sec">
+			<h2>概要</h2>
+			<p>
+				ImageCategorizer はフォルダに貯まった画像を順に見ながら、
+				予めフォルダパスを設定したボタンを押すことで、テンポよく画像を移動することができるアプリケーションです。
+			</p>
+		</div>
+	</section>
+	<section>
+		<div class="sec">
+			<h2>画面の紹介</h2>
+			<h3>メイン画面</h3>
+			<p>
+				画像の振り分けを行う画面です。<br>
+				ボタンを押すと表示されている画像がそのボタンに割り当てられているフォルダへ移動します。
+			</p>
+			<img src="img/img00.png" alt="トップ画像" width="800" height="600">
+			<h3>フォルダ一覧画面</h3>
+			<p>
+				ボタンに割り当てるフォルダを管理する画面です。<br>
+				ボタンを追加・編集・削除できます。
+			</p>
+			<img src="img/img00.png" alt="トップ画像" width="800" height="600">
+			<h3>フォルダ追加・編集画面</h3>
+			<p>
+				ボタンを追加または編集するときのダイアログです。<br>
+				ボタンは送り先パス以外に表示名や背景色を指定できます。
+			</p>
+			<img src="img/img00.png" alt="トップ画像" width="800" height="600">
+			<h3>比較画面画面</h3>
+			<p>
+				送り先に同名のファイルがあった場合に表示されます。<br>
+				送り元と送り先の画像と容量が表示されます。<br>
+				上書きを押すとそのまま上書きします。
+				リネームを押した場合は名前入力ダイアログが表示され新しい名前を入力します。
+				キャンセルを押すと中断します。
+			</p>
+			<img src="img/img00.png" alt="トップ画像" width="800" height="600">
+		</div>
+	</section>
+	<section>
+		<div class="sec">
+			<h2>起動オプション</h2>
+			<p>
+				ImageCategorizer は以下のような起動オプションに対応しています。
+			</p>
+		</div>
+	</section>
+	<section>
+		<div class="sec">
+			<h2>ショートカットキー</h2>
+			<table>
+				<tr>
+					<th>キー</th>
+					<th>機能</th>
+				</tr>
+				<tr>
+					<td>Ctrl+左、Ctrl+右</td>
+					<td>前の画像、次の画像</td>
+				</tr>
+				<tr>
+					<td>Ctrl+O</td>
+					<td>フォルダを開く</td>
+				</tr>
+				<tr>
+					<td>F12</td>
+					<td>環境設定</td>
+				</tr>
+				<tr>
+					<td>F1</td>
+					<td>ImageCategorizerについて（このドキュメントを表示）</td>
+				</tr>
+				<tr>
+					<td>Alt+F4</td>
+					<td>閉じる</td>
+				</tr>
+			</table>
+		</div>
+	</section>
+	<footer>
+		<p></p>
+	</footer>
+</body>
+</html>
